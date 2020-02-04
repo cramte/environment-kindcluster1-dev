@@ -26,6 +26,28 @@ environments:
       production: false
   key: dev
   repository: environment-kindcluster1-dev
+- ingress:
+    domain: 172.17.0.2.nip.io
+    externalDNS: false
+    ignoreLoadBalancer: true
+    namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
+  repository: environment-kindcluster1-production
+- ingress:
+    domain: 172.17.0.2.nip.io
+    externalDNS: false
+    ignoreLoadBalancer: true
+    namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+  repository: environment-kindcluster1-staging
 gitops: true
 ingress:
   domain: 172.17.0.2.nip.io
