@@ -1,0 +1,15 @@
+adminUser:
+  password: local:kindcluster1/adminUser:password
+  username: admin
+docker:
+  email: admin
+  password: local:kindcluster1/docker:password
+  url: https://index.docker.io/v1/
+  username: admin
+enableDocker: true
+pipelineUser:
+  email: pipelinebot@fake.fake
+  token: local:kindcluster1/pipelineUser:token
+  username: jx-pipelinebot
+prow:
+  hmacToken: local:kindcluster1/prow:hmacToken
